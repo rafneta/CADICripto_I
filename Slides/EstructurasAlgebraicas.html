@@ -493,7 +493,7 @@ Rafael Mtz Mtz
 <p><a href="https://jamboard.google.com/d/1r9NKJUw6lRJ23qntUOhWqO1XS6BKBlYV9MyZLi6G0g4/viewer?f=9">Ejemplo</a></p>
 </section></section>
 <section>
-<section id="curvas-elípticas" class="title-slide slide level1 center">
+<section id="curvas-elípticas" class="title-slide slide level1 smaller center">
 <h1>Curvas Elípticas</h1>
 <p>Las curvas elípticas son parejas de elementos. A estas parejas se les puede dotar de una estructura de grupo.</p>
 </section>
@@ -526,11 +526,188 @@ Rafael Mtz Mtz
 </div>
 </div>
 </section></section>
+<section>
 <section id="grupos-ii" class="title-slide slide level1 center">
 <h1>Grupos II</h1>
 
 </section>
-
+<section id="subgrupo" class="slide level2">
+<h2>Subgrupo</h2>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Resultados</a></li><li><a href="#tabset-4-2">Resultados</a></li><li><a href="#tabset-4-3">Definiciones</a></li><li><a href="#tabset-4-4">Resultado</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<p>Sea <span class="math inline">\((G,\cdot)\)</span> un grupo</p>
+<ol type="1">
+<li>La identidad en <span class="math inline">\(G\)</span> es única</li>
+<li>Para cada <span class="math inline">\(a\in G\)</span>, <span class="math inline">\(a^{-1}\)</span> está determinado de forma única</li>
+<li><span class="math inline">\(\left(a^{-1}\right)^{-1}=a\)</span></li>
+<li><span class="math inline">\((ab)^{-1}=b^{-1}a^{-1}\)</span></li>
+</ol>
+</div>
+<div id="tabset-4-2">
+<p>En <span class="math inline">\((G,\cdot)\)</span> un grupo, se satisfacen las leyer de cancelación izquierda y derecha</p>
+<ol type="a">
+<li>Si <span class="math inline">\(au = av\)</span> entonces <span class="math inline">\(u = v\)</span></li>
+<li>Si <span class="math inline">\(uv = vb\)</span> entonces <span class="math inline">\(u = v\)</span></li>
+</ol>
+<p>Con esto podemos concluir que las ecuaciones <span class="math inline">\(ax = b\)</span> y <span class="math inline">\(ya = b\)</span> tienen solución unica. ¿Cuáles?</p>
+</div>
+<div id="tabset-4-3">
+<ul>
+<li><p>Si <span class="math inline">\(G\)</span> es un grupo finito, entonces el <span class="math inline">\(\color{red}{\bf orden}\)</span> <span class="math inline">\(\color{red}{|G|}\)</span> de <span class="math inline">\(G\)</span> es el número de elementos de <span class="math inline">\(G\)</span>. En general, para cualquier conjunto finito <span class="math inline">\(S\)</span>, <span class="math inline">\(|S|\)</span> es el número de elementos de <span class="math inline">\(S\)</span>.</p></li>
+<li><p>Si <span class="math inline">\(H\)</span> es un subconjunto de un grupo <span class="math inline">\(G\)</span> cerrado bajo la operación de grupo de <span class="math inline">\(G\)</span> y si <span class="math inline">\(H\)</span> es él mismo un grupo bajo esta operación inducida, entonces <span class="math inline">\(H\)</span> es un <span class="math inline">\(\color{red}{\bf subgrupo}\)</span> <span class="math inline">\(\color{red}{\bf de}\)</span> <span class="math inline">\(G\)</span>. Denotaremos por <span class="math inline">\(H\leq G\)</span> o <span class="math inline">\(G\geq H\)</span> el hecho de <span class="math inline">\(H\)</span> es un subgrupo de <span class="math inline">\(G\)</span>, y <span class="math inline">\(H&lt;G\)</span> o <span class="math inline">\(G&gt;H\)</span> significará que <span class="math inline">\(H\leq G\)</span>, pero <span class="math inline">\(H\neq G\)</span>.</p></li>
+</ul>
+</div>
+<div id="tabset-4-4">
+<p>Un subconjunto <span class="math inline">\(H\)</span> de un conjunto <span class="math inline">\(G\)</span> es un subgrupo de <span class="math inline">\(G\)</span> si y sólo si</p>
+<ol type="1">
+<li><p><span class="math inline">\(H\)</span> es cerrado bajo la operación de <span class="math inline">\(G\)</span>;</p></li>
+<li><p>la identidad <span class="math inline">\(e\)</span> de <span class="math inline">\(G\)</span> está en <span class="math inline">\(H\)</span>;</p></li>
+<li><p>para todos los <span class="math inline">\(a\in H\)</span> es cierto que <span class="math inline">\(a^{-1}\in H\)</span> también.</p></li>
+</ol>
+<p><a href="https://jamboard.google.com/d/1eQsSk3XzYO7ltUSODAT3mYo-CMe9hPtBHtYixN_3L4Y/viewer?f=18">Ejemplo grupo</a>, <a href="https://jamboard.google.com/d/1eQsSk3XzYO7ltUSODAT3mYo-CMe9hPtBHtYixN_3L4Y/viewer?f=19">Ejemplo subgrupo</a>, <strong>Actividad 04</strong></p>
+</div>
+</div>
+</div>
+</section>
+<section id="grupos-cíclicos" class="slide level2 smaller">
+<h2>Grupos cíclicos</h2>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Conjunto genrador</a></li><li><a href="#tabset-5-2">Nota</a></li><li><a href="#tabset-5-3">Grupo cíclico</a></li><li><a href="#tabset-5-4">Subgrupos generados</a></li><li><a href="#tabset-5-5">Subgrupos generados II</a></li><li><a href="#tabset-5-6"><span class="math inline">\(4\)</span>-Grupo Klein</a></li><li><a href="#tabset-5-7">Teorema de Lagrange</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<p>Un <strong>conjunto generador</strong> de un grupo <span class="math inline">\(G\)</span> es un subconjunto <span class="math inline">\(S\)</span> de G tal que <strong>todo elemento</strong> de <span class="math inline">\(G\)</span> puede ser expresado como la operación de un número finito de elementos de <span class="math inline">\(S\)</span> y de sus inversos. Es este caso escribimos <span class="math inline">\(G = \big&lt; S \big&gt;\)</span></p>
+<ul>
+<li><span class="math inline">\(\left(\mathbb{Z},+\right)\)</span> está generado por <span class="math inline">\(\{-1\}\)</span> pero también es generado por <span class="math inline">\(\{1\}\)</span></li>
+</ul>
+<p>Vamos a la nota …</p>
+<p><span class="math inline">\(\big&lt; S \big&gt;\)</span> es el subgrupo de G conformado por todos los elementos que pueden ser expresados como el producto de un número finito de elementos de <span class="math inline">\(S\)</span> y de sus inversos.</p>
+<ul>
+<li>Tomamos a <span class="math inline">\(\left(\mathbb{Z},+\right)\)</span> entonces <span class="math inline">\(\big&lt; 3\big&gt;=3\mathbb{Z}\)</span></li>
+</ul>
+<p>Si <span class="math inline">\(G = \big&lt; S \big&gt;\)</span>, los elementos de S se llaman <strong>generadores</strong> de G. Si el conjunto <span class="math inline">\(S\)</span> es finito se dice que <span class="math inline">\(G\)</span> es <strong>finitamente generado</strong></p>
+</div>
+<div id="tabset-5-2">
+<p>Un subgrupo <span class="math inline">\(G\)</span> que contenga <span class="math inline">\(a\)</span> debe contener <span class="math inline">\(aa\)</span>, que se denotará como <span class="math inline">\(a^2\)</span>. Entonces debe contener <span class="math inline">\(a^2a\)</span>, lo que se donota por <span class="math inline">\(a^3\)</span>. En general, debe contener <span class="math inline">\(a^n\)</span> ( en notación aditiva es <span class="math inline">\(na\)</span>). Un subgrupo que contenga al elemento <span class="math inline">\(a\)</span> debe contener <span class="math inline">\(a^{-1}\)</span> y por tanto <span class="math inline">\(a^{-1}a^{-1}\)</span>, que se denotará como <span class="math inline">\(a^{-2}\)</span> y en general, debe contener a <span class="math inline">\(a^{-m}\)</span> con <span class="math inline">\(m\in \mathbb{Z}^+\)</span>. Debe contener a la identidad <span class="math inline">\(e=aa^{-1}\)</span>, que se denotará como <span class="math inline">\(a^0=e\)</span>. Un subgrupo que contenga a <span class="math inline">\(a\)</span> debe contener <span class="math inline">\(\{a^n\,\mid\,n\in \mathbb{Z}\}\)</span>. Las potencias de <span class="math inline">\(a^n\)</span> no necesariamente son distintas. Además se cumple la ley usual de los exponentes <span class="math inline">\(a^na^m=a^{n+m}\)</span> para <span class="math inline">\(m,\, n\in \mathbb{Z}\)</span>.</p>
+</div>
+<div id="tabset-5-3">
+<p>Un <strong>grupo cíclico</strong> es aquel grupo que está genrado por un solo elemento.</p>
+<ul>
+<li><span class="math inline">\(\left(\mathbb{Z},+\right)\)</span> está generado por <span class="math inline">\(\{-1\}\)</span> pero también es generado por <span class="math inline">\(\{1\}\)</span>. En particular <span class="math inline">\(\big&lt; 1 \big&gt; = \mathbb{Z}\)</span>, <span class="math inline">\(\mathbb{Z}\)</span> es finitamente generado.</li>
+</ul>
+</div>
+<div id="tabset-5-4">
+<div id="fig-elephants" class="quarto-layout-panel">
+<figure>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-surus" class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagenes/laticez2.png" data-ref-parent="fig-elephants"></p>
+<p></p><figcaption>(a) <span class="math inline">\(\mathbb{Z}_2\)</span></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-b" class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagenes/laticez4.png" data-ref-parent="fig-elephants"></p>
+<p></p><figcaption>(b) <span class="math inline">\(\mathbb{Z}_4\)</span></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-c" class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagenes/laticez8.png" data-ref-parent="fig-elephants"></p>
+<p></p><figcaption>(c) <span class="math inline">\(\mathbb{Z}_8\)</span></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption>Figura&nbsp;1: Lattice de subgrupos</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div id="tabset-5-5">
+<div id="fig-elephants" class="quarto-layout-panel">
+<figure>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-d" class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagenes/laticez6.png" data-ref-parent="fig-elephants"></p>
+<p></p><figcaption>(a) <span class="math inline">\(\mathbb{Z}_6\)</span></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-e" class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imagenes/laticez12.png" data-ref-parent="fig-elephants"></p>
+<p></p><figcaption>(b) <span class="math inline">\(\mathbb{Z}_{12}\)</span></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption>Figura&nbsp;2: Lattice de subgrupos II</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div id="tabset-5-6">
+<p><img data-src="imagenes/grupo4klein.png" alt="4-Grupo de Klein"> <strong>Actividad 05</strong></p>
+</div>
+<div id="tabset-5-7">
+<ul>
+<li><p>Sea <span class="math inline">\(G\)</span> un grupo y <span class="math inline">\(g \in G\)</span>. El <strong>orden</strong> de <span class="math inline">\(g\)</span> (<span class="math inline">\(|g|\)</span>) es el número entero positivo más pequeño tal que <span class="math inline">\(g^n=e\;(ng=e)\)</span></p></li>
+<li><p>Si <span class="math inline">\(G\)</span> es cíclico con <span class="math inline">\(|G|=\big&lt; g \big&gt;\)</span> entonces <span class="math inline">\(|G|=|g|\)</span></p></li>
+</ul>
+<div class="def">
+<p>Si <span class="math inline">\(G\)</span> es un grupo finito y <span class="math inline">\(H\leq G\)</span>, entonces el orden de <span class="math inline">\(H\)</span> divide al orden de <span class="math inline">\(G\)</span>.</p>
+</div>
+<ul>
+<li><p>Sea <span class="math inline">\(G\)</span> un grupo finito y <span class="math inline">\(g \in G\)</span>, entonces <span class="math inline">\(g^{|G|}=e\)</span></p></li>
+<li><p>Un grupo de orden primo es cíclico.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="isomorfismos-de-grupos" class="slide level2 smaller">
+<h2>Isomorfismos de grupos</h2>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Defición</a></li><li><a href="#tabset-6-2">Ejemplo 1</a></li><li><a href="#tabset-6-3">Ejemplo 2</a></li><li><a href="#tabset-6-4">Ejemplo 3</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<div class="def">
+<p>Un <span class="math inline">\(\color{red}{\bf isomorfismo}\)</span> <span class="math inline">\(\color{red}{\bf entre}\)</span> <span class="math inline">\(\color{red}{\bf un}\)</span> <span class="math inline">\(\color{red}{\bf grupo}\)</span> <span class="math inline">\(\color{red}{G}\)</span> <span class="math inline">\(\color{red}{\bf y}\)</span> <span class="math inline">\(\color{red}{\bf un}\)</span> <span class="math inline">\(\color{red}{\bf grupo}\)</span> <span class="math inline">\(\color{red}{G'}\)</span> es una función <span class="math inline">\(\phi\)</span> biyectiva, entre <span class="math inline">\(G\)</span> y <span class="math inline">\(G'\)</span>, tal que para todo <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> en <span class="math inline">\(G\)</span>, <span class="math display">\[\phi(xy)=\phi (x)\phi(y).\]</span> Los grupos son <span class="math inline">\(\color{red}{\bf isomorfos}\)</span> y se denotan como <span class="math inline">\(G\cong G'\)</span>.</p>
+</div>
+<p>Como observación, la operación <span class="math inline">\(xy\)</span> del miembro izquierdo en <span class="math inline">\(\phi(xy)=\phi (x)\phi(y)\)</span> es la operación en <span class="math inline">\(G\)</span>, mientras que <span class="math inline">\(\phi (x)\phi(y)\)</span> del lado derecho la operación en <span class="math inline">\(G'\)</span>.</p>
+</div>
+<div id="tabset-6-2">
+<p><span class="math inline">\(\mathbb R\)</span> bajo la suma es isomorfo a <span class="math inline">\(\mathbb R^+\)</span> bajo la multiplicación, con <span class="math inline">\(\phi:{\mathbb R} \rightarrow {\mathbb R^+}\)</span> como <span class="math inline">\(\phi(x)=e^x\)</span>.</p>
+<ul>
+<li><p>Si <span class="math inline">\(\phi(x)=\phi(y)\Rightarrow e^x=e^y\Rightarrow x=y\)</span>. Así, <span class="math inline">\(\phi\)</span> es inyectiva (uno a uno).</p></li>
+<li><p>Si <span class="math inline">\(r\in {\mathbb R^+}\)</span> entonces <span class="math inline">\(\ln(r)\in {\mathbb R}\)</span>, luego <span class="math inline">\(\phi(\ln (r))=e^{\ln(r)}=r\)</span>. Por tanto, <span class="math inline">\(\phi\)</span> es suprayectiva (sobre) <span class="math inline">\(\mathbb R^+\)</span>.</p></li>
+<li><p>Para <span class="math inline">\(x,y\in{\mathbb R}\)</span> se tiene <span class="math display">\[\phi(x+y)=e^{x+y}=e^xe^y=\phi(x)\phi(y).\]</span> Así <span class="math inline">\(\mathbb{R}\cong\mathbb{R}^+\)</span></p></li>
+</ul>
+</div>
+<div id="tabset-6-3">
+<p><img data-src="imagenes/iso2.png"></p>
+</div>
+<div id="tabset-6-4" class="scrollable">
+<p><span class="math inline">\(4\)</span>-Grupo de Klein</p>
+<div class="r-stack">
+<p><img data-src="imagenes/klein1.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="imagenes/klein2.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="imagenes/klein3.png" class="fragment fade-in-then-out"></p>
+<p><img data-src="imagenes/klein4.png" class="fragment fade-in-then-out"></p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
 <section id="anillos-ii" class="title-slide slide level1 center">
 <h1>Anillos II</h1>
 
@@ -635,12 +812,12 @@ Rafael Mtz Mtz
 <section id="slide-5" class="slide level2">
 <h2>Slide 5</h2>
 <div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Tab A</a></li><li><a href="#tabset-4-2">Tab B</a></li></ul>
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Tab A</a></li><li><a href="#tabset-7-2">Tab B</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1">
+<div id="tabset-7-1">
 <p>Content for <code>Tab A</code></p>
 </div>
-<div id="tabset-4-2">
+<div id="tabset-7-2">
 <p>Content for <code>Tab B</code></p>
 </div>
 </div>
