@@ -516,7 +516,7 @@ Rafael Mtz Mtz
 <p><span class="math display">\[E(\mathbb{F}) = \left\{(x,y)\in\mathbb{F}^2 \mid y^2 = x^3+ax +b\right\}\]</span></p>
 <p>donde <span class="math inline">\(4a^3+27b^2\neq 0\)</span> es llamado <strong>curva elíptica</strong></p>
 </div>
-<p>La condición sobre los coeficientes evita que exitan raíces múltiples.</p>
+<p>La condición sobre los coeficientes evita que existan raíces múltiples (singularidades).</p>
 </div>
 <div id="tabset-3-3">
 <iframe id="myFrame" src="https://www.desmos.com/calculator/keykb9ux8p" width="100%" height="500" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
@@ -574,7 +574,7 @@ Rafael Mtz Mtz
 <section id="grupos-cíclicos" class="slide level2 smaller">
 <h2>Grupos cíclicos</h2>
 <div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Conjunto genrador</a></li><li><a href="#tabset-5-2">Nota</a></li><li><a href="#tabset-5-3">Grupo cíclico</a></li><li><a href="#tabset-5-4">Subgrupos generados</a></li><li><a href="#tabset-5-5">Subgrupos generados II</a></li><li><a href="#tabset-5-6"><span class="math inline">\(4\)</span>-Grupo Klein</a></li><li><a href="#tabset-5-7">Teorema de Lagrange</a></li></ul>
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Conjunto generador</a></li><li><a href="#tabset-5-2">Nota</a></li><li><a href="#tabset-5-3">Grupo cíclico</a></li><li><a href="#tabset-5-4">Subgrupos generados</a></li><li><a href="#tabset-5-5">Subgrupos generados II</a></li><li><a href="#tabset-5-6"><span class="math inline">\(4\)</span>-Grupo Klein</a></li><li><a href="#tabset-5-7">Teorema de Lagrange</a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1">
 <p>Un <strong>conjunto generador</strong> de un grupo <span class="math inline">\(G\)</span> es un subconjunto <span class="math inline">\(S\)</span> de G tal que <strong>todo elemento</strong> de <span class="math inline">\(G\)</span> puede ser expresado como la operación de un número finito de elementos de <span class="math inline">\(S\)</span> y de sus inversos. Es este caso escribimos <span class="math inline">\(G = \big&lt; S \big&gt;\)</span></p>
@@ -592,7 +592,7 @@ Rafael Mtz Mtz
 <p>Un subgrupo <span class="math inline">\(G\)</span> que contenga <span class="math inline">\(a\)</span> debe contener <span class="math inline">\(aa\)</span>, que se denotará como <span class="math inline">\(a^2\)</span>. Entonces debe contener <span class="math inline">\(a^2a\)</span>, lo que se donota por <span class="math inline">\(a^3\)</span>. En general, debe contener <span class="math inline">\(a^n\)</span> ( en notación aditiva es <span class="math inline">\(na\)</span>). Un subgrupo que contenga al elemento <span class="math inline">\(a\)</span> debe contener <span class="math inline">\(a^{-1}\)</span> y por tanto <span class="math inline">\(a^{-1}a^{-1}\)</span>, que se denotará como <span class="math inline">\(a^{-2}\)</span> y en general, debe contener a <span class="math inline">\(a^{-m}\)</span> con <span class="math inline">\(m\in \mathbb{Z}^+\)</span>. Debe contener a la identidad <span class="math inline">\(e=aa^{-1}\)</span>, que se denotará como <span class="math inline">\(a^0=e\)</span>. Un subgrupo que contenga a <span class="math inline">\(a\)</span> debe contener <span class="math inline">\(\{a^n\,\mid\,n\in \mathbb{Z}\}\)</span>. Las potencias de <span class="math inline">\(a^n\)</span> no necesariamente son distintas. Además, se cumple la ley usual de los exponentes <span class="math inline">\(a^na^m=a^{n+m}\)</span> para <span class="math inline">\(m,\, n\in \mathbb{Z}\)</span>.</p>
 </div>
 <div id="tabset-5-3">
-<p>Un <strong>grupo cíclico</strong> es aquel grupo que está genrado por un solo elemento.</p>
+<p>Un <strong>grupo cíclico</strong> es aquel grupo que está generado por un solo elemento.</p>
 <ul>
 <li><span class="math inline">\(\left(\mathbb{Z},+\right)\)</span> está generado por <span class="math inline">\(\{-1\}\)</span> pero también es generado por <span class="math inline">\(\{1\}\)</span>. En particular <span class="math inline">\(\big&lt; 1 \big&gt; = \mathbb{Z}\)</span>, <span class="math inline">\(\mathbb{Z}\)</span> es finitamente generado.</li>
 </ul>
@@ -708,54 +708,6 @@ Rafael Mtz Mtz
 </div>
 </div>
 </div>
-<!-- # Anillos II -->
-<!-- # Campos II -->
-<!-- ## slide {.smaller} -->
-<!-- :::: {.columns} -->
-<!-- ::: {.column width="50%"} -->
-<!-- Sea $Z_5$ con  $y^2 = x^3+x+1$. -->
-<!-- $E(Z_5)$ es cíclico de orden $9$.   -->
-<!-- $E(Z_5)$ está generado por $(0,1)$ -->
-<!-- ::: -->
-<!-- ::: {.column width="50%"} -->
-<!-- | $x$ | $x^3+x+1$  | $y$  |    Puntos    | -->
-<!-- |:---:|:-------------------------:|:----:|:------------:| -->
-<!-- |  0  |             1             | $\pm 1$| $(0,1),(0,4)$ | -->
-<!-- |  1  |             3             |  −   |              | -->
-<!-- |  2  |             1             | $\pm 1$ | $(2,1),(2,4)$ | -->
-<!-- |  3  |             1             | $\pm 1$ | $(3,1),(3,4)$ | -->
-<!-- |  4  |             4             | $\pm 2$ | $(4,2),(4,3)$ | -->
-<!-- ::: -->
-<!-- :::: -->
-<!-- ## Slide 2 {.smaller} -->
-<!-- ::: {.fragment .fade-left} -->
-<!-- Fade in -->
-<!-- ::: -->
-<!-- ## Slide 3 -->
-<!-- ::: {.incremental} -->
-<!-- - Eat spaghetti -->
-<!-- - Drink wine -->
-<!-- ::: -->
-<!-- ::: {.notes} -->
-<!-- Speaker notes go here. -->
-<!-- ::: -->
-<!-- ## Slide 4 -->
-<!-- :::: {.columns} -->
-<!-- ::: {.column width="40%"} -->
-<!-- Left column -->
-<!-- ::: -->
-<!-- ::: {.column width="60%"} -->
-<!-- Right column -->
-<!-- ::: -->
-<!-- :::: -->
-<!-- ## Slide 5 -->
-<!-- ::: {.panel-tabset} -->
-<!-- ### Tab A -->
-<!-- Content for `Tab A` -->
-<!-- ### Tab B -->
-<!-- Content for `Tab B` -->
-<!-- ::: -->
-<!-- olaa -->
 <p><img src="./imagenes/logoazul.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="https://github.com/rafneta/CADICripto_I">CADI: Criptografía I</a></p>
@@ -917,7 +869,7 @@ Rafael Mtz Mtz
         hideCursorTime: 5000,
 
         // Opens links in an iframe preview overlay
-        previewLinks: true,
+        previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
         transition: 'fade',
